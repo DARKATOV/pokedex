@@ -30,7 +30,7 @@ let response = goToSeach.addEventListener("click", inputEvent => {
     inputEvent.preventDefault();
     let valueInput = inputToSearch.value;
     valueInput = valueInput.trim();
-    if (valueInput > 1118){
+    if (valueInput > 1118){       //consultar la respuesta de un numero mayor a  1118 
         return alert("The pokemon with the highest number is 1118");
     }
     if (valueInput == 0 || ""){
@@ -54,6 +54,9 @@ const valuesOfPokemon = async function (valueInput) {
     // values of pokemon
 
     const response = await fetch (`https://pokeapi.co/api/v2/pokemon/${valueInput}`);
+    console.log(response.ok);
+    console.log(response.status);
+    // if aqui de la 33 
     const data = await response.json();
     console.log(data);
     const pokemonName = data.name;
