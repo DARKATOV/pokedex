@@ -1,0 +1,8 @@
+body {
+    background-color: rgb(212, 205, 106);
+    color: rgb(75, 75, 75);
+}
+
+#inputValue {
+    color: tomato;
+}
