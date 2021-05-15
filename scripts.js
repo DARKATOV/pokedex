@@ -121,12 +121,6 @@ const valuesOfPokemon = async function (valueInput) {
     abilitiesOfPokemon.appendChild(h33);
     paragraph3.textContent = `Abilities ${abilitiesArray}`;
     abilitiesOfPokemon.appendChild(paragraph3);
-
-
-
-
-    
-
   };
 
 //     .then(function(json){
